@@ -14,7 +14,7 @@ if (!discordToken || !discordChannel || !authPort || !worldPort || !host) {
 
 const discord = new DiscordClient(discordToken, discordChannel);
 
-discord.client.on("ready", () => {
+discord.on("foundMessage", () => {
   const wowSocket = new WoWSocket(
     discord,
     parseInt(authPort),
