@@ -1,0 +1,22 @@
+{
+  "name": "dusk-heartbeat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch --openssl-legacy-provider --env-file=.env ./src/index.ts",
+    "build": "npx tsc",
+    "start": "npx tsx --env-file=.env ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.4",
+    "tsx": "^4.19.2"
+  },
+  "dependencies": {
+    "discord.js": "^14.17.2",
+    "net": "^1.0.2"
+  }
+}
